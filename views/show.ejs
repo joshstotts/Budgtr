@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="/skeleton.css" />
+    <title>Budgtr Show Page</title>
+    <style>
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+        }
+        body {
+            background-color: lightgray;
+        }
+        h1, button {
+            margin: 10px 20px;
+        }  
+        button {
+        margin: 20px 20px;
+    }
+        div {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+    <h1><%= budget2.name %></h1>
+
+    <a href='/budgets'><button>Back</button></a>
+    </nav>
+
+<div>
+    <p><b>Date:</b> <%= budget2.date %></p>
+    <p><b>Name:</b> <%= budget2.name %></p>
+    <p><b>From:</b> <%= budget2.from %></p>
+    <p><b>Amoun</b>t: <%= budget2.amount %></p>
+    <p><b>Tags:</b> <%= budget2.tags %></p>
+</div>
+</body>
+</html>
